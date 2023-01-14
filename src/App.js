@@ -5,7 +5,7 @@ export default function App() {
   const [count, setCount] = React.useState(0);
 
   function clickBtn() {
-    setCount(count + 1);
+    setCount((current) => current + 1);
   }
 
   return (
